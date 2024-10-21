@@ -19,6 +19,7 @@
 		37FC9A862CC64F4C00A25B11 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37FC9A852CC64F4C00A25B11 /* ProfileViewController.swift */; };
 		37FC9A882CC64F5C00A25B11 /* TermsConditionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37FC9A872CC64F5C00A25B11 /* TermsConditionsViewController.swift */; };
 		37FC9A8A2CC64F7200A25B11 /* LanguageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37FC9A892CC64F7200A25B11 /* LanguageViewController.swift */; };
+		37FC9A8E2CC65C8200A25B11 /* EX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37FC9A8D2CC65C8200A25B11 /* EX.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		37FC9A852CC64F4C00A25B11 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		37FC9A872CC64F5C00A25B11 /* TermsConditionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsConditionsViewController.swift; sourceTree = "<group>"; };
 		37FC9A892CC64F7200A25B11 /* LanguageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageViewController.swift; sourceTree = "<group>"; };
+		37FC9A8D2CC65C8200A25B11 /* EX.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EX.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -177,6 +179,7 @@
 		37FC9A7C2CC64E9600A25B11 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				37FC9A8D2CC65C8200A25B11 /* EX.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -263,6 +266,7 @@
 				37FC9A882CC64F5C00A25B11 /* TermsConditionsViewController.swift in Sources */,
 				37FC9A7E2CC64EDF00A25B11 /* SplashViewController.swift in Sources */,
 				37FC9A862CC64F4C00A25B11 /* ProfileViewController.swift in Sources */,
+				37FC9A8E2CC65C8200A25B11 /* EX.swift in Sources */,
 				37FC9A802CC64F1500A25B11 /* BrowseViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
