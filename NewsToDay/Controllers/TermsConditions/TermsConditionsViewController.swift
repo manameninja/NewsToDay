@@ -55,8 +55,9 @@ Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, ad
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
+        makeConstraints()
+    }
 
-        // Do any additional setup after loading the view.
     private func setupUI() {
         navigationItem.leftBarButtonItem?.image = UIImage(systemName: "arrow.left")
         navigationItem.largeTitleDisplayMode = .always
@@ -74,5 +75,20 @@ Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, ad
         textStackView.addArrangedSubview(termsConditionsLabel)
     }
     
-
+      private func makeConstraints() {
+        let scrollContentGuide = scrollView.contentLayoutGuide
+        let scrollFrameGuide = scrollView.frameLayoutGuide
+        
+        NSLayoutConstraint.activate([
+            scrollView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+            scrollView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+            scrollView.topAnchor.constraint(equalTo: view.topAnchor),
+            scrollView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor),
+                        
+            textStackView.leadingAnchor.constraint(equalTo: scrollFrameGuide.leadingAnchor,constant: 20),
+            textStackView.trailingAnchor.constraint(equalTo: scrollFrameGuide.trailingAnchor, constant: -20),
+            textStackView.topAnchor.constraint(equalTo: scrollContentGuide.topAnchor, constant: 20),
+            textStackView.bottomAnchor.constraint(equalTo: scrollContentGuide.bottomAnchor),
+        ])
+    }
 }
