@@ -20,6 +20,10 @@
 		37FC9A882CC64F5C00A25B11 /* TermsConditionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37FC9A872CC64F5C00A25B11 /* TermsConditionsViewController.swift */; };
 		37FC9A8A2CC64F7200A25B11 /* LanguageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37FC9A892CC64F7200A25B11 /* LanguageViewController.swift */; };
 		37FC9A8E2CC65C8200A25B11 /* EX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37FC9A8D2CC65C8200A25B11 /* EX.swift */; };
+		4670D2952CC6757300B309D5 /* Inter-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4670D2912CC6757300B309D5 /* Inter-Bold.otf */; };
+		4670D2962CC6757300B309D5 /* Inter-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4670D2932CC6757300B309D5 /* Inter-Regular.otf */; };
+		4670D2972CC6757300B309D5 /* Inter-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4670D2942CC6757300B309D5 /* Inter-SemiBold.otf */; };
+		4670D2982CC6757300B309D5 /* Inter-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4670D2922CC6757300B309D5 /* Inter-Medium.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +42,10 @@
 		37FC9A872CC64F5C00A25B11 /* TermsConditionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsConditionsViewController.swift; sourceTree = "<group>"; };
 		37FC9A892CC64F7200A25B11 /* LanguageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageViewController.swift; sourceTree = "<group>"; };
 		37FC9A8D2CC65C8200A25B11 /* EX.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EX.swift; sourceTree = "<group>"; };
+		4670D2912CC6757300B309D5 /* Inter-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Bold.otf"; sourceTree = "<group>"; };
+		4670D2922CC6757300B309D5 /* Inter-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Medium.otf"; sourceTree = "<group>"; };
+		4670D2932CC6757300B309D5 /* Inter-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Regular.otf"; sourceTree = "<group>"; };
+		4670D2942CC6757300B309D5 /* Inter-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-SemiBold.otf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +95,7 @@
 		37FC9A6C2CC64A6500A25B11 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				4670D2902CC6756400B309D5 /* Font */,
 				37FC9A6A2CC64A6500A25B11 /* Assets.xcassets */,
 				37FC9A6B2CC64A6500A25B11 /* Info.plist */,
 				37FC9A662CC64A6500A25B11 /* LaunchScreen.storyboard */,
@@ -184,6 +193,17 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		4670D2902CC6756400B309D5 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				4670D2912CC6757300B309D5 /* Inter-Bold.otf */,
+				4670D2922CC6757300B309D5 /* Inter-Medium.otf */,
+				4670D2932CC6757300B309D5 /* Inter-Regular.otf */,
+				4670D2942CC6757300B309D5 /* Inter-SemiBold.otf */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -247,6 +267,10 @@
 			files = (
 				37FC9A6E2CC64A6500A25B11 /* LaunchScreen.storyboard in Resources */,
 				37FC9A6F2CC64A6500A25B11 /* Assets.xcassets in Resources */,
+				4670D2952CC6757300B309D5 /* Inter-Bold.otf in Resources */,
+				4670D2962CC6757300B309D5 /* Inter-Regular.otf in Resources */,
+				4670D2972CC6757300B309D5 /* Inter-SemiBold.otf in Resources */,
+				4670D2982CC6757300B309D5 /* Inter-Medium.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
