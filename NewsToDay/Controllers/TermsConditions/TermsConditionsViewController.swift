@@ -54,8 +54,24 @@ Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, ad
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupUI()
 
         // Do any additional setup after loading the view.
+    private func setupUI() {
+        navigationItem.leftBarButtonItem?.image = UIImage(systemName: "arrow.left")
+        navigationItem.largeTitleDisplayMode = .always
+        let titleLabel = UILabel()
+        titleLabel.text = "Terms & Conditions"
+        titleLabel.font = UIFont(name: "Inter-SemiBold", size: 24)
+        titleLabel.textColor = .blackPrimary
+        titleLabel.textAlignment = .center
+        navigationItem.titleView = titleLabel
+        
+        view.backgroundColor = .white
+        scrollView.contentSize = CGSize(width: textStackView.frame.width, height: textStackView.frame.height + 200)
+        view.addSubview(scrollView)
+        scrollView.addSubview(textStackView)
+        textStackView.addArrangedSubview(termsConditionsLabel)
     }
     
 
