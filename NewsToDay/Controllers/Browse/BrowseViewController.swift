@@ -7,13 +7,30 @@
 
 import UIKit
 
-class BrowseViewController: UIViewController {
+final class BrowseViewController: UIViewController {
+    
+    private let browseView = BrowseView()
+    
+    override func loadView() {
+        view = browseView
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        browseView.delegate = self
+        
+        view.backgroundColor = .white
     }
-    
+}
 
+//MARK: -
+extension BrowseViewController: BrowseViewDelegate {
+    func buttonTapped() {
+        print("Button Tapped")
+        
+        browseView.setImage(UIImage(systemName: "book") ?? UIImage())
+        browseView.setTitle(Link.search.rawValue)
+        browseView.setText(DataManager.shared.apiKey)
+    }
 }
