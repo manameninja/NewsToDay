@@ -35,7 +35,7 @@ class ArticleViewController: UIViewController {
     
     //MARK: - Private methods
     private func setupViews() {
-        view.backgroundColor = .red
+        view.backgroundColor = .white
         
         view.addSubview(tableView)
     }
@@ -81,7 +81,7 @@ extension ArticleViewController: UITableViewDataSource {
 //MARK: - UITableViewDelegate
 extension ArticleViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        300
+        812
     }
 }
 
