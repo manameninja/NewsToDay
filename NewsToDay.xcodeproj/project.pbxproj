@@ -24,8 +24,7 @@
 		4670D2962CC6757300B309D5 /* Inter-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4670D2932CC6757300B309D5 /* Inter-Regular.otf */; };
 		4670D2972CC6757300B309D5 /* Inter-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4670D2942CC6757300B309D5 /* Inter-SemiBold.otf */; };
 		4670D2982CC6757300B309D5 /* Inter-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4670D2922CC6757300B309D5 /* Inter-Medium.otf */; };
-		B5FEBDD32CC8EFE100D524E1 /* BookmarkModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FEBDD22CC8EFD700D524E1 /* BookmarkModel.swift */; };
-		B5FEBDD52CC8F00400D524E1 /* BookmarkCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FEBDD42CC8EFFE00D524E1 /* BookmarkCell.swift */; };
+		4670D29D2CC6F5A300B309D5 /* TermsConditionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4670D29C2CC6F5A300B309D5 /* TermsConditionsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,8 +47,7 @@
 		4670D2922CC6757300B309D5 /* Inter-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Medium.otf"; sourceTree = "<group>"; };
 		4670D2932CC6757300B309D5 /* Inter-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Regular.otf"; sourceTree = "<group>"; };
 		4670D2942CC6757300B309D5 /* Inter-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-SemiBold.otf"; sourceTree = "<group>"; };
-		B5FEBDD22CC8EFD700D524E1 /* BookmarkModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkModel.swift; sourceTree = "<group>"; };
-		B5FEBDD42CC8EFFE00D524E1 /* BookmarkCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkCell.swift; sourceTree = "<group>"; };
+		4670D29C2CC6F5A300B309D5 /* TermsConditionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsConditionsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -179,6 +177,7 @@
 			isa = PBXGroup;
 			children = (
 				37FC9A872CC64F5C00A25B11 /* TermsConditionsViewController.swift */,
+				4670D29C2CC6F5A300B309D5 /* TermsConditionsView.swift */,
 			);
 			path = TermsConditions;
 			sourceTree = "<group>";
@@ -294,6 +293,7 @@
 				37FC9A722CC64A6500A25B11 /* SceneDelegate.swift in Sources */,
 				B5FEBDD32CC8EFE100D524E1 /* BookmarkModel.swift in Sources */,
 				37FC9A732CC64A6500A25B11 /* OnboardingViewController.swift in Sources */,
+				4670D29D2CC6F5A300B309D5 /* TermsConditionsView.swift in Sources */,
 				37FC9A882CC64F5C00A25B11 /* TermsConditionsViewController.swift in Sources */,
 				37FC9A7E2CC64EDF00A25B11 /* SplashViewController.swift in Sources */,
 				37FC9A862CC64F4C00A25B11 /* ProfileViewController.swift in Sources */,
@@ -321,7 +321,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = BlackDark;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -349,7 +349,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = BlackDark;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
