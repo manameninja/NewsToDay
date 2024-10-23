@@ -25,6 +25,7 @@
 		4670D2972CC6757300B309D5 /* Inter-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4670D2942CC6757300B309D5 /* Inter-SemiBold.otf */; };
 		4670D2982CC6757300B309D5 /* Inter-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4670D2922CC6757300B309D5 /* Inter-Medium.otf */; };
 		4670D29D2CC6F5A300B309D5 /* TermsConditionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4670D29C2CC6F5A300B309D5 /* TermsConditionsView.swift */; };
+		4670D2A12CC9178C00B309D5 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4670D2A02CC9178C00B309D5 /* ProfileView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,7 @@
 		4670D2932CC6757300B309D5 /* Inter-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Regular.otf"; sourceTree = "<group>"; };
 		4670D2942CC6757300B309D5 /* Inter-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-SemiBold.otf"; sourceTree = "<group>"; };
 		4670D29C2CC6F5A300B309D5 /* TermsConditionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsConditionsView.swift; sourceTree = "<group>"; };
+		4670D2A02CC9178C00B309D5 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,6 +169,7 @@
 			isa = PBXGroup;
 			children = (
 				37FC9A852CC64F4C00A25B11 /* ProfileViewController.swift */,
+				4670D2A02CC9178C00B309D5 /* ProfileView.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -285,6 +288,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				37FC9A8A2CC64F7200A25B11 /* LanguageViewController.swift in Sources */,
+				4670D2A12CC9178C00B309D5 /* ProfileView.swift in Sources */,
 				37FC9A822CC64F2A00A25B11 /* BookmarksViewController.swift in Sources */,
 				37FC9A712CC64A6500A25B11 /* AppDelegate.swift in Sources */,
 				37FC9A842CC64F3C00A25B11 /* ArticleViewController.swift in Sources */,
