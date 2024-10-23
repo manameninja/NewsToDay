@@ -1,3 +1,12 @@
+//
+//  LanguageView.swift
+//  NewsToDay
+//
+//  Created by Катя on 23.10.2024.
+//
+
+import UIKit
+
  final class LanguageView: UIView {
 
     private let buttonStackView: UIStackView = {
@@ -25,6 +34,44 @@
     
     override init(frame: CGRect) {
         super.init(frame: frame)
+        setupUI()
+        makeConstraints()
+        makeCustomButton(title: "English", button: englishButton)
+        makeCustomButton(title: "Russian", button: russianButton)
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+    @objc private func englishButtonPressed (_ sender: UIButton) {
+        if sender.currentTitle == englishButton.currentTitle {
+            englishButton.configuration?.baseForegroundColor = .white
+            englishButton.configuration?.baseBackgroundColor = .purplePrimary
+            englishButton.configuration?.image = UIImage(systemName: "checkmark")
+            englishButton.configuration?.imagePlacement = .trailing
+            englishButton.configuration?.imagePadding = 240
+       
+            russianButton.configuration?.baseForegroundColor = .greyDark
+            russianButton.configuration?.baseBackgroundColor = .greyLighter
+            russianButton.configuration?.image = nil
+        }
+    }
+    
+    @objc private func russianButtonPressed (_ sender: UIButton) {
+        if sender.currentTitle == russianButton.currentTitle {
+            russianButton.configuration?.baseForegroundColor = .white
+            russianButton.configuration?.baseBackgroundColor = .purplePrimary
+            russianButton.configuration?.image = UIImage(systemName: "checkmark")
+            russianButton.configuration?.imagePlacement = .trailing
+            russianButton.configuration?.imagePadding = 240
+        
+            englishButton.configuration?.baseForegroundColor = .greyDark
+            englishButton.configuration?.baseBackgroundColor = .greyLighter
+            englishButton.configuration?.image = nil
+        }
+    }
+    
     private func makeCustomButton(title: String, button: UIButton) {
         button.layer.cornerRadius = 12
         button.contentHorizontalAlignment = UIControl.ContentHorizontalAlignment.left
@@ -58,3 +105,4 @@
                 englishButton.heightAnchor.constraint(equalToConstant: 56),
                 russianButton.heightAnchor.constraint(equalToConstant: 56),
             ])}
+}
