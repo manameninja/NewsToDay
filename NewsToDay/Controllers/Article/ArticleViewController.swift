@@ -14,12 +14,12 @@ class ArticleViewController: UIViewController {
     
     //MARK: - UI elements
     private let tableView: UITableView = {
-        let tv = UITableView()
-        tv.backgroundColor = .none
-        tv.separatorStyle = .none
-        tv.bounces = false
-        tv.translatesAutoresizingMaskIntoConstraints = false
-        return tv
+        let tableView = UITableView()
+        tableView.backgroundColor = .none
+        tableView.separatorStyle = .none
+        tableView.bounces = false
+        tableView.translatesAutoresizingMaskIntoConstraints = false
+        return tableView
     }()
     
     //MARK: - Lifecycle
@@ -38,6 +38,13 @@ class ArticleViewController: UIViewController {
         view.backgroundColor = .white
         
         view.addSubview(tableView)
+        
+        addLeftNavBarButton()
+        addRightNavBarButton()
+        addTransparentNavBar()
+        
+        tableView.contentInsetAdjustmentBehavior = .never
+        tableView.separatorStyle = .none
     }
     
     private func setDelegates() {
@@ -46,10 +53,38 @@ class ArticleViewController: UIViewController {
     }
     
     @objc
-    private func exampleButtonTapped() {
-    }
+    private func leftNavBarButtonTapped() {}
+    
+    @objc
+    private func rightNavBarButtonTapped() {}
     
     //MARK: - Methods
+    func addRightNavBarButton() {
+        let rightNavBarButton = UIBarButtonItem(
+            image: UIImage(systemName: "bookmark"),
+            style: .plain,
+            target: self,
+            action: #selector(rightNavBarButtonTapped))
+        navigationItem.rightBarButtonItem = rightNavBarButton
+        rightNavBarButton.tintColor = .white
+    }
+    
+    func addLeftNavBarButton() {
+        let leftNavBarButton = UIBarButtonItem(
+            image: UIImage(named: "backButton"),
+            style: .plain,
+            target: self,
+            action: #selector(leftNavBarButtonTapped))
+        navigationItem.leftBarButtonItem = leftNavBarButton
+        leftNavBarButton.tintColor = .white
+    }
+    
+    func addTransparentNavBar() {
+        navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
+        navigationController?.navigationBar.shadowImage = UIImage()
+        navigationController?.navigationBar.isTranslucent = true
+        navigationController?.view.backgroundColor = .clear
+    }
 }
 
 //MARK: - Set constraints
@@ -57,10 +92,9 @@ extension ArticleViewController {
     private func setConstraints() {
         NSLayoutConstraint.activate([
             tableView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
-            tableView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
+            tableView.topAnchor.constraint(equalTo: view.topAnchor, constant: -12),
             tableView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
             tableView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
-            
         ])
     }
 }
@@ -81,7 +115,12 @@ extension ArticleViewController: UITableViewDataSource {
 //MARK: - UITableViewDelegate
 extension ArticleViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        812
+        
+        if indexPath.row == 0 {
+              return 812
+           }
+        
+        return UITableView.automaticDimension
     }
 }
 
