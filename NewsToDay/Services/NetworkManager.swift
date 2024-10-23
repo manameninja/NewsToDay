@@ -38,6 +38,10 @@ final class NetworkManager {
     
     
     func fetch<T: Decodable>(_ type: T.Type, from url: String, completion: @escaping(Result<T, NetworkError>) -> Void) {
+        
+        #warning("убрать дебаг")
+//        print("url: \(url)\n")
+        
         guard let url = URL(string: url) else {
             completion(.failure(.invalidURL))
             return
@@ -53,8 +57,10 @@ final class NetworkManager {
                 let dataModel = try JSONDecoder().decode(T.self, from: data)
                 completion(.success(dataModel))
             } catch {
+                
                 #warning("убрать дебаг")
-                print("DATA:\n", data, "\nRESPONCE:\n", response, "\nERROR\n", error)
+//                print("DATA:\n", data, "\nRESPONCE:\n", response, "\nERROR\n", error)
+                
                 completion(.failure(.decodingError))
             }
         }.resume()

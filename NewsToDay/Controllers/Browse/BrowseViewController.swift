@@ -29,8 +29,20 @@ extension BrowseViewController: BrowseViewDelegate {
     func buttonTapped() {
         print("Button Tapped")
         
-        browseView.setImage(UIImage(systemName: "book") ?? UIImage())
-        browseView.setTitle(Link.search.rawValue)
-        browseView.setText(DataManager.shared.apiKey)
+        DataManager.shared.getNews(category: Category.random) { [unowned self] newsList in
+            let news = newsList.first
+            
+            DataManager.shared.getImage(news?.urlToImage ?? "") { [unowned self] data in
+                let image = UIImage(data: data) ?? UIImage(systemName: "person.fill.questionmark") ?? UIImage()
+                DispatchQueue.main.async { [unowned self] in
+                    browseView.setImage(image)
+                }
+            }
+            
+            DispatchQueue.main.async { [unowned self] in
+                browseView.setTitle(news?.title ?? "Empty")
+                browseView.setText((news?.description ?? "Empty description") + (news?.content ?? "Empty content"))
+            }
+        }
     }
 }

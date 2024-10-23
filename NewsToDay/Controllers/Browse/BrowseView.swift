@@ -18,7 +18,7 @@ final class BrowseView: UIView {
     //MARK: - Private properties
     private let imageView: UIImageView = {
         let imageView = UIImageView()
-        imageView.contentMode = .scaleAspectFit
+        imageView.contentMode = .scaleAspectFill
         imageView.image = UIImage(systemName: "folder")
         imageView.translatesAutoresizingMaskIntoConstraints = false
         return imageView
@@ -34,7 +34,7 @@ final class BrowseView: UIView {
     private let textLabel: UILabel = {
         let label = UILabel()
         label.text = "Text Label"
-        label.numberOfLines = 5
+        label.numberOfLines = 0
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
@@ -94,7 +94,7 @@ private extension BrowseView {
             imageView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 20),
             imageView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -20),
             imageView.bottomAnchor.constraint(equalTo: centerYAnchor, constant: -20),
-            imageView.heightAnchor.constraint(equalTo: widthAnchor),
+            imageView.topAnchor.constraint(equalTo: topAnchor),
             
             titleLabel.topAnchor.constraint(equalTo: imageView.bottomAnchor, constant: 20),
             titleLabel.centerXAnchor.constraint(equalTo: centerXAnchor),
