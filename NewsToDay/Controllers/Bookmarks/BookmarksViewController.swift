@@ -7,14 +7,21 @@
 
 import UIKit
 
-class BookmarksViewController: UIViewController {
+class BookmarksViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    
+    private let tableView = UITableView()
+    
+    let articles = [
+        BookmarkModel(category: "UI/UX Design", title: "A Simple Trick For Creating Color Palettes Quickly", image: UIImage(systemName: "sun.min") ?? UIImage()),
+        BookmarkModel(category: "UI/UX Design", title: "A Simple Trick For Creating Color Palettes Quickly", image: UIImage(systemName: "sun.min") ?? UIImage())
+        ]
     
     // MARK: - UI
     private lazy var titleLabel: UILabel = {
         let element = UILabel()
         element.text = "Bookmarks"
         element.font = UIFont(name: "Inter-Bold", size: 24)
-        element.textColor = UIColor(named: "BlackPrimary")
+        element.textColor = .blackPrimary
         element.translatesAutoresizingMaskIntoConstraints = false
         return element
     }()
@@ -23,7 +30,7 @@ class BookmarksViewController: UIViewController {
         let element = UILabel()
         element.text = "Saved articles to the library"
         element.font = UIFont(name: "Inter-Regular", size: 16)
-        element.textColor = UIColor(named: "GreyPrimary")
+        element.textColor = .greyPrimary
         element.translatesAutoresizingMaskIntoConstraints = false
         return element
     }()
@@ -41,7 +48,7 @@ class BookmarksViewController: UIViewController {
         let element = UIView()
         element.layer.cornerRadius = 36
         element.layer.masksToBounds = true
-        element.backgroundColor = UIColor(named: "GreyLighter")
+        element.backgroundColor = .greyLighter
         element.translatesAutoresizingMaskIntoConstraints = false
         return element
     }()
@@ -49,7 +56,7 @@ class BookmarksViewController: UIViewController {
     private lazy var bookIcon: UIImageView = {
         let element = UIImageView()
         element.image = UIImage(systemName: "book.closed")
-        element.tintColor = UIColor(named: "PurplePrimary")
+        element.tintColor = .purplePrimary
         element.contentMode = .scaleAspectFit
         element.translatesAutoresizingMaskIntoConstraints = false
         return element
@@ -59,7 +66,7 @@ class BookmarksViewController: UIViewController {
         let element = UILabel()
         element.text = "You haven't saved any articles yet. Start reading and bookmarking them now."
         element.font = UIFont(name: "Inter-Regular", size: 16)
-        element.textColor = UIColor(named: "BlackPrimary")
+        element.textColor = .blackPrimary
         element.numberOfLines = 0
         element.textAlignment = .center
         element.translatesAutoresizingMaskIntoConstraints = false
@@ -81,8 +88,11 @@ class BookmarksViewController: UIViewController {
         setViews()
         setupContraints()
         
+        tableView.delegate = self
+        tableView.dataSource = self
+                
+        tableView.register(BookmarkCell.self, forCellReuseIdentifier: "BookmarkCell")
     }
-    
     //MARK: - Set Views
     private func setViews() {
         view.addSubview(stackView)
@@ -94,8 +104,28 @@ class BookmarksViewController: UIViewController {
         circleView.addSubview(bookIcon)
         centralStackView.addArrangedSubview(circleView)
         centralStackView.addArrangedSubview(withoutBookmarksLabel)
-   
+        
+        view.addSubview(tableView)
+        tableView.translatesAutoresizingMaskIntoConstraints = false
     }
+    
+    // MARK: - UITableViewDataSource
+       
+       func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+           return articles.count
+       }
+       
+       func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+           let cell = tableView.dequeueReusableCell(withIdentifier: "BookmarkCell", for: indexPath) as! BookmarkCell
+           cell.configure(with: articles[indexPath.row])
+           return cell
+       }
+       
+       // MARK: - UITableViewDelegate
+       
+       func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+           return 96
+       }
 }
 
 //MARK: - Setup Constraints
@@ -118,8 +148,14 @@ extension BookmarksViewController {
             centralStackView.centerYAnchor.constraint(equalTo: view.centerYAnchor),
             centralStackView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 60),
             centralStackView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -60),
+            
+            tableView.topAnchor.constraint(equalTo: stackView.bottomAnchor, constant: 20),
+            tableView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+            tableView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+            tableView.bottomAnchor.constraint(equalTo: view.bottomAnchor)
 
         ])
     }
 }
 #Preview { BookmarksViewController() }
+
