@@ -175,5 +175,17 @@ class ArticleTableViewCell: UITableViewCell {
     }
     
     //MARK: - Methods
+    func cellConfigure(
+        author: String,
+        title: String,
+        url: String,
+        image: UIImage,
+        content: String
+    ) {
+        backgroundImageView.image = image
+        topLabel.text = title
+        fullNameLabel.text = author
+        descriptionLabel.text = content
+    }
 }
 

@@ -10,6 +10,8 @@ import SwiftUI
 
 class ArticleViewController: UIViewController {
     
+    var article = Article.testData
+    
     let idTableViewCell = "idTableViewCell"
     
     //MARK: - UI elements
@@ -107,6 +109,16 @@ extension ArticleViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: idTableViewCell, for: indexPath) as! ArticleTableViewCell
+        
+        if let defaultImage = UIImage(named: "capitolBuilding.jpg") {
+            cell.cellConfigure(
+                author: article.author ?? "",
+                title: article.title ?? "",
+                url: article.url ?? "",
+                image: defaultImage,
+                content: article.content ?? ""
+            )
+        }
         
         return cell
     }

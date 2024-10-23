@@ -24,6 +24,7 @@
 		4670D2962CC6757300B309D5 /* Inter-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4670D2932CC6757300B309D5 /* Inter-Regular.otf */; };
 		4670D2972CC6757300B309D5 /* Inter-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4670D2942CC6757300B309D5 /* Inter-SemiBold.otf */; };
 		4670D2982CC6757300B309D5 /* Inter-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4670D2922CC6757300B309D5 /* Inter-Medium.otf */; };
+		6E6FC3F52CC93B4F00E141C0 /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E6FC3F42CC93B4F00E141C0 /* Article.swift */; };
 		6EB58CDA2CC6F49900A6A5C4 /* ArticleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EB58CD92CC6F49900A6A5C4 /* ArticleTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
@@ -47,6 +48,7 @@
 		4670D2922CC6757300B309D5 /* Inter-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Medium.otf"; sourceTree = "<group>"; };
 		4670D2932CC6757300B309D5 /* Inter-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Regular.otf"; sourceTree = "<group>"; };
 		4670D2942CC6757300B309D5 /* Inter-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-SemiBold.otf"; sourceTree = "<group>"; };
+		6E6FC3F42CC93B4F00E141C0 /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
 		6EB58CD92CC6F49900A6A5C4 /* ArticleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleTableViewCell.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
@@ -158,8 +160,9 @@
 		37FC9A782CC64D8200A25B11 /* Article */ = {
 			isa = PBXGroup;
 			children = (
-				6EB58CD82CC6F45C00A6A5C4 /* Cell */,
-				37FC9A832CC64F3C00A25B11 /* ArticleViewController.swift */,
+				6E6FC3F12CC93A6000E141C0 /* Model */,
+				6E6FC3F22CC93A6A00E141C0 /* View */,
+				6E6FC3F32CC93A7100E141C0 /* Controller */,
 			);
 			path = Article;
 			sourceTree = "<group>";
@@ -205,6 +208,30 @@
 				4670D2942CC6757300B309D5 /* Inter-SemiBold.otf */,
 			);
 			path = Font;
+			sourceTree = "<group>";
+		};
+		6E6FC3F12CC93A6000E141C0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6E6FC3F42CC93B4F00E141C0 /* Article.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6E6FC3F22CC93A6A00E141C0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6EB58CD82CC6F45C00A6A5C4 /* Cell */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6E6FC3F32CC93A7100E141C0 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				37FC9A832CC64F3C00A25B11 /* ArticleViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		6EB58CD82CC6F45C00A6A5C4 /* Cell */ = {
@@ -292,6 +319,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E6FC3F52CC93B4F00E141C0 /* Article.swift in Sources */,
 				37FC9A8A2CC64F7200A25B11 /* LanguageViewController.swift in Sources */,
 				37FC9A822CC64F2A00A25B11 /* BookmarksViewController.swift in Sources */,
 				37FC9A712CC64A6500A25B11 /* AppDelegate.swift in Sources */,
