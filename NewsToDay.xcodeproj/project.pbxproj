@@ -11,6 +11,7 @@
 		246F483B2CC7F87100308129 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 246F483A2CC7F87100308129 /* NetworkManager.swift */; };
 		246F483E2CC7F96C00308129 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 246F483D2CC7F96C00308129 /* DataManager.swift */; };
 		246F48402CC8303100308129 /* News.swift in Sources */ = {isa = PBXBuildFile; fileRef = 246F483F2CC8303100308129 /* News.swift */; };
+		372FEF012CCA67B400C7B400 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 372FEF002CCA67B400C7B400 /* TabBarViewController.swift */; };
 		37FC9A6E2CC64A6500A25B11 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37FC9A662CC64A6500A25B11 /* LaunchScreen.storyboard */; };
 		37FC9A6F2CC64A6500A25B11 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37FC9A6A2CC64A6500A25B11 /* Assets.xcassets */; };
 		37FC9A712CC64A6500A25B11 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37FC9A622CC64A6500A25B11 /* AppDelegate.swift */; };
@@ -36,6 +37,7 @@
 		246F483A2CC7F87100308129 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		246F483D2CC7F96C00308129 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		246F483F2CC8303100308129 /* News.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = News.swift; sourceTree = "<group>"; };
+		372FEF002CCA67B400C7B400 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		37FC9A282CC63C1D00A25B11 /* NewsToDay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewsToDay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		37FC9A622CC64A6500A25B11 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		37FC9A632CC64A6500A25B11 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -84,6 +86,14 @@
 				246F483F2CC8303100308129 /* News.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		372FEEFF2CCA67A700C7B400 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				372FEF002CCA67B400C7B400 /* TabBarViewController.swift */,
+			);
+			path = TabBar;
 			sourceTree = "<group>";
 		};
 		37FC9A1F2CC63C1D00A25B11 = {
@@ -146,6 +156,7 @@
 		37FC9A742CC64A8400A25B11 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				372FEEFF2CCA67A700C7B400 /* TabBar */,
 				37FC9A752CC64D0000A25B11 /* Splash */,
 				37FC9A692CC64A6500A25B11 /* Onboarding */,
 				37FC9A762CC64D3300A25B11 /* Browse */,
@@ -321,6 +332,7 @@
 				37FC9A722CC64A6500A25B11 /* SceneDelegate.swift in Sources */,
 				246F48392CC7EBE000308129 /* BrowseView.swift in Sources */,
 				37FC9A732CC64A6500A25B11 /* OnboardingViewController.swift in Sources */,
+				372FEF012CCA67B400C7B400 /* TabBarViewController.swift in Sources */,
 				4670D29D2CC6F5A300B309D5 /* TermsConditionsView.swift in Sources */,
 				37FC9A882CC64F5C00A25B11 /* TermsConditionsViewController.swift in Sources */,
 				37FC9A7E2CC64EDF00A25B11 /* SplashViewController.swift in Sources */,
