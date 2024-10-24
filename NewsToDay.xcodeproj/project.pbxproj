@@ -186,7 +186,9 @@
 		37FC9A782CC64D8200A25B11 /* Article */ = {
 			isa = PBXGroup;
 			children = (
-				37FC9A832CC64F3C00A25B11 /* ArticleViewController.swift */,
+				6E6FC3F12CC93A6000E141C0 /* Model */,
+				6E6FC3F22CC93A6A00E141C0 /* View */,
+				6E6FC3F32CC93A7100E141C0 /* Controller */,
 			);
 			path = Article;
 			sourceTree = "<group>";
@@ -233,6 +235,38 @@
 				4670D2942CC6757300B309D5 /* Inter-SemiBold.otf */,
 			);
 			path = Font;
+			sourceTree = "<group>";
+		};
+		6E6FC3F12CC93A6000E141C0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6E6FC3F42CC93B4F00E141C0 /* Article.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6E6FC3F22CC93A6A00E141C0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6EB58CD82CC6F45C00A6A5C4 /* Cell */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6E6FC3F32CC93A7100E141C0 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				37FC9A832CC64F3C00A25B11 /* ArticleViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		6EB58CD82CC6F45C00A6A5C4 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				6EB58CD92CC6F49900A6A5C4 /* ArticleTableViewCell.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -312,12 +346,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E6FC3F52CC93B4F00E141C0 /* Article.swift in Sources */,
 				37FC9A8A2CC64F7200A25B11 /* LanguageViewController.swift in Sources */,
 				246F483E2CC7F96C00308129 /* DataManager.swift in Sources */,
 				246F48402CC8303100308129 /* News.swift in Sources */,
 				37FC9A822CC64F2A00A25B11 /* BookmarksViewController.swift in Sources */,
 				37FC9A712CC64A6500A25B11 /* AppDelegate.swift in Sources */,
 				37FC9A842CC64F3C00A25B11 /* ArticleViewController.swift in Sources */,
+				6EB58CDA2CC6F49900A6A5C4 /* ArticleTableViewCell.swift in Sources */,
 				37FC9A722CC64A6500A25B11 /* SceneDelegate.swift in Sources */,
 				246F48392CC7EBE000308129 /* BrowseView.swift in Sources */,
 				37FC9A732CC64A6500A25B11 /* OnboardingViewController.swift in Sources */,
