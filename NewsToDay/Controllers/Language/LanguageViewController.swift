@@ -9,11 +9,8 @@ import UIKit
 
 class LanguageViewController: UIViewController {
     
-    let languageView: UIView = {
-        let view = LanguageView()
-        view.translatesAutoresizingMaskIntoConstraints = false
-        return view
-    }()
+    let languageView = LanguageView()
+    
     private let titleLabel: UILabel = {
         let titleLabel = UILabel()
         titleLabel.text = "Language"
@@ -30,14 +27,12 @@ class LanguageViewController: UIViewController {
         navigationItem.largeTitleDisplayMode = .always
         navigationItem.titleView = titleLabel
         
-        view.addSubview(languageView)
-                
-        NSLayoutConstraint.activate([
-        languageView.topAnchor.constraint(equalTo: view.topAnchor),
-        languageView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
-        languageView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
-        languageView.leadingAnchor.constraint(equalTo: view.leadingAnchor)
-    ])
+        view = languageView
+        
+        for languageCase in Language.allCases {
+            let button = UIButton.makeCustomButton(title: languageCase.rawValue, imageName: "checkmark")
+            languageView.addButton(button)
+        }
    }
 }
 
