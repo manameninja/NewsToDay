@@ -30,6 +30,8 @@
 		4670D2982CC6757300B309D5 /* Inter-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4670D2922CC6757300B309D5 /* Inter-Medium.otf */; };
 		4670D29D2CC6F5A300B309D5 /* TermsConditionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4670D29C2CC6F5A300B309D5 /* TermsConditionsView.swift */; };
 		4670D29F2CC8ED8A00B309D5 /* LanguageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4670D29E2CC8ED8A00B309D5 /* LanguageView.swift */; };
+		4670D2A72CCA507F00B309D5 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4670D2A62CCA507F00B309D5 /* Settings.swift */; };
+		4670D2AB2CCAA7AE00B309D5 /* UIButton + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4670D2AA2CCAA7AE00B309D5 /* UIButton + Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +60,8 @@
 		4670D2942CC6757300B309D5 /* Inter-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-SemiBold.otf"; sourceTree = "<group>"; };
 		4670D29C2CC6F5A300B309D5 /* TermsConditionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsConditionsView.swift; sourceTree = "<group>"; };
 		4670D29E2CC8ED8A00B309D5 /* LanguageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageView.swift; sourceTree = "<group>"; };
+		4670D2A62CCA507F00B309D5 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		4670D2AA2CCAA7AE00B309D5 /* UIButton + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton + Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +88,7 @@
 			isa = PBXGroup;
 			children = (
 				246F483F2CC8303100308129 /* News.swift */,
+				4670D2A62CCA507F00B309D5 /* Settings.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -223,6 +228,7 @@
 			isa = PBXGroup;
 			children = (
 				37FC9A8D2CC65C8200A25B11 /* EX.swift */,
+				4670D2AA2CCAA7AE00B309D5 /* UIButton + Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -321,7 +327,9 @@
 				37FC9A822CC64F2A00A25B11 /* BookmarksViewController.swift in Sources */,
 				4670D29F2CC8ED8A00B309D5 /* LanguageView.swift in Sources */,
 				37FC9A712CC64A6500A25B11 /* AppDelegate.swift in Sources */,
+				4670D2A72CCA507F00B309D5 /* Settings.swift in Sources */,
 				37FC9A842CC64F3C00A25B11 /* ArticleViewController.swift in Sources */,
+				4670D2AB2CCAA7AE00B309D5 /* UIButton + Extension.swift in Sources */,
 				37FC9A722CC64A6500A25B11 /* SceneDelegate.swift in Sources */,
 				246F48392CC7EBE000308129 /* BrowseView.swift in Sources */,
 				37FC9A732CC64A6500A25B11 /* OnboardingViewController.swift in Sources */,
