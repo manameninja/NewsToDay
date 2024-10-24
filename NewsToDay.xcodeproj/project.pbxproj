@@ -32,6 +32,7 @@
 		4670D29F2CC8ED8A00B309D5 /* LanguageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4670D29E2CC8ED8A00B309D5 /* LanguageView.swift */; };
 		4670D2A72CCA507F00B309D5 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4670D2A62CCA507F00B309D5 /* Settings.swift */; };
 		4670D2AB2CCAA7AE00B309D5 /* UIButton + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4670D2AA2CCAA7AE00B309D5 /* UIButton + Extension.swift */; };
+		4670D2AD2CCAC8D700B309D5 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4670D2AC2CCAC8D700B309D5 /* ProfileView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +63,7 @@
 		4670D29E2CC8ED8A00B309D5 /* LanguageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageView.swift; sourceTree = "<group>"; };
 		4670D2A62CCA507F00B309D5 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		4670D2AA2CCAA7AE00B309D5 /* UIButton + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton + Extension.swift"; sourceTree = "<group>"; };
+		4670D2AC2CCAC8D700B309D5 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -202,7 +204,7 @@
 			isa = PBXGroup;
 			children = (
 				37FC9A852CC64F4C00A25B11 /* ProfileViewController.swift */,
-				4670D2A02CC9178C00B309D5 /* ProfileView.swift */,
+				4670D2AC2CCAC8D700B309D5 /* ProfileView.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -334,6 +336,7 @@
 				37FC9A722CC64A6500A25B11 /* SceneDelegate.swift in Sources */,
 				246F48392CC7EBE000308129 /* BrowseView.swift in Sources */,
 				37FC9A732CC64A6500A25B11 /* OnboardingViewController.swift in Sources */,
+				4670D2AD2CCAC8D700B309D5 /* ProfileView.swift in Sources */,
 				4670D29D2CC6F5A300B309D5 /* TermsConditionsView.swift in Sources */,
 				37FC9A882CC64F5C00A25B11 /* TermsConditionsViewController.swift in Sources */,
 				37FC9A7E2CC64EDF00A25B11 /* SplashViewController.swift in Sources */,
