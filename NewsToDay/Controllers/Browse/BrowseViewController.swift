@@ -21,6 +21,8 @@ final class BrowseViewController: UIViewController {
         browseView.delegate = self
         
         view.backgroundColor = .white
+        
+        title = "Home"
     }
 }
 

@@ -53,10 +53,10 @@ class TabBarViewController: UITabBarController {
     }()
     
     private func setupTabs() {
-        let homeVC = BrowseViewController()
-        let categoryVC = OnboardingViewController()
-        let bookmarksVC = BookmarksViewController()
-        let profileVC = ProfileViewController()
+        let homeVC = UINavigationController(rootViewController: BrowseViewController())
+        let categoryVC = UINavigationController(rootViewController: OnboardingViewController())
+        let bookmarksVC = UINavigationController(rootViewController: BookmarksViewController())
+        let profileVC = UINavigationController(rootViewController: ProfileViewController())
         
         setViewControllers([homeVC, categoryVC, bookmarksVC, profileVC], animated: true)
     }
