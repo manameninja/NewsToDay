@@ -44,7 +44,7 @@ import UIKit
                  button.configuration?.baseBackgroundColor = .purplePrimary
                  button.configuration?.image = UIImage(systemName: "checkmark")
                  button.configuration?.imagePlacement = .trailing
-                 button.configuration?.imagePadding = 230
+                 button.configuration?.imagePadding = 236
              } else {
                  button.configuration?.baseForegroundColor = .greyDark
                  button.configuration?.baseBackgroundColor = .greyLighter

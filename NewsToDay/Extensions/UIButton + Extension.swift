@@ -20,7 +20,7 @@ extension UIButton {
             out.font = UIFont(name: "Inter-SemiBold", size: .init(16))
             return out
         }
-        configuration.contentInsets = NSDirectionalEdgeInsets(top: 0, leading: 10, bottom: 0, trailing: 0)
+        configuration.contentInsets = NSDirectionalEdgeInsets(top: 0, leading: 24, bottom: 0, trailing: 0)
         configuration.baseBackgroundColor = .greyLighter
         configuration.cornerStyle = .medium
         button.configuration = configuration
