@@ -25,6 +25,8 @@
 		4670D2972CC6757300B309D5 /* Inter-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4670D2942CC6757300B309D5 /* Inter-SemiBold.otf */; };
 		4670D2982CC6757300B309D5 /* Inter-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4670D2922CC6757300B309D5 /* Inter-Medium.otf */; };
 		4670D29D2CC6F5A300B309D5 /* TermsConditionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4670D29C2CC6F5A300B309D5 /* TermsConditionsView.swift */; };
+		B5FEBDDE2CC9B8F100D524E1 /* BookmarkCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FEBDDC2CC9B8F100D524E1 /* BookmarkCell.swift */; };
+		B5FEBDDF2CC9B8F100D524E1 /* BookmarkModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FEBDDD2CC9B8F100D524E1 /* BookmarkModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +50,8 @@
 		4670D2932CC6757300B309D5 /* Inter-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Regular.otf"; sourceTree = "<group>"; };
 		4670D2942CC6757300B309D5 /* Inter-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-SemiBold.otf"; sourceTree = "<group>"; };
 		4670D29C2CC6F5A300B309D5 /* TermsConditionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsConditionsView.swift; sourceTree = "<group>"; };
+		B5FEBDDC2CC9B8F100D524E1 /* BookmarkCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkCell.swift; sourceTree = "<group>"; };
+		B5FEBDDD2CC9B8F100D524E1 /* BookmarkModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,8 +154,8 @@
 		37FC9A772CC64D5F00A25B11 /* Bookmarks */ = {
 			isa = PBXGroup;
 			children = (
-				B5FEBDD42CC8EFFE00D524E1 /* BookmarkCell.swift */,
-				B5FEBDD22CC8EFD700D524E1 /* BookmarkModel.swift */,
+				B5FEBDDC2CC9B8F100D524E1 /* BookmarkCell.swift */,
+				B5FEBDDD2CC9B8F100D524E1 /* BookmarkModel.swift */,
 				37FC9A812CC64F2A00A25B11 /* BookmarksViewController.swift */,
 			);
 			path = Bookmarks;
@@ -291,13 +295,13 @@
 				37FC9A712CC64A6500A25B11 /* AppDelegate.swift in Sources */,
 				37FC9A842CC64F3C00A25B11 /* ArticleViewController.swift in Sources */,
 				37FC9A722CC64A6500A25B11 /* SceneDelegate.swift in Sources */,
-				B5FEBDD32CC8EFE100D524E1 /* BookmarkModel.swift in Sources */,
 				37FC9A732CC64A6500A25B11 /* OnboardingViewController.swift in Sources */,
+				B5FEBDDE2CC9B8F100D524E1 /* BookmarkCell.swift in Sources */,
+				B5FEBDDF2CC9B8F100D524E1 /* BookmarkModel.swift in Sources */,
 				4670D29D2CC6F5A300B309D5 /* TermsConditionsView.swift in Sources */,
 				37FC9A882CC64F5C00A25B11 /* TermsConditionsViewController.swift in Sources */,
 				37FC9A7E2CC64EDF00A25B11 /* SplashViewController.swift in Sources */,
 				37FC9A862CC64F4C00A25B11 /* ProfileViewController.swift in Sources */,
-				B5FEBDD52CC8F00400D524E1 /* BookmarkCell.swift in Sources */,
 				37FC9A8E2CC65C8200A25B11 /* EX.swift in Sources */,
 				37FC9A802CC64F1500A25B11 /* BrowseViewController.swift in Sources */,
 			);
