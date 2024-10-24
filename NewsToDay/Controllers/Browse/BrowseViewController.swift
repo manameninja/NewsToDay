@@ -7,13 +7,42 @@
 
 import UIKit
 
-class BrowseViewController: UIViewController {
+final class BrowseViewController: UIViewController {
+    
+    private let browseView = BrowseView()
+    
+    override func loadView() {
+        view = browseView
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        browseView.delegate = self
+        
+        view.backgroundColor = .white
     }
-    
+}
 
+//MARK: -
+extension BrowseViewController: BrowseViewDelegate {
+    func buttonTapped() {
+        print("Button Tapped")
+        
+        DataManager.shared.getNews(category: Category.random) { [unowned self] newsList in
+            let news = newsList.first
+            
+            DataManager.shared.getImage(news?.urlToImage ?? "") { [unowned self] data in
+                let image = UIImage(data: data) ?? UIImage(systemName: "person.fill.questionmark") ?? UIImage()
+                DispatchQueue.main.async { [unowned self] in
+                    browseView.setImage(image)
+                }
+            }
+            
+            DispatchQueue.main.async { [unowned self] in
+                browseView.setTitle(news?.title ?? "Empty")
+                browseView.setText((news?.description ?? "Empty description") + (news?.content ?? "Empty content"))
+            }
+        }
+    }
 }
